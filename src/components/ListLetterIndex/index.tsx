@@ -37,6 +37,7 @@ export const ListLetterIndex: React.FC<ListLetterIndexProps> = ({
     <View style={[styles.letterIndexContainer, indexContainerStyle]}>
       <FlatList
         testID="flatList"
+        scrollEnabled={false}
         contentContainerStyle={[styles.letterIndexList, letterListContainerStyle]}
         data={sectionData}
         keyExtractor={(i) => i.title}
